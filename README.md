@@ -14,7 +14,21 @@ Key benefits: 44% better prediction accuracy, 20-40% lower inventory costs, and 
 - Automation: Daily predictions via Lambda, scheduled by EventBridge, monitored with CloudWatch.
 - Visualization: Dashboards in QuickSight.
 
-![Architecture Diagram](images/architecture.png)
+## Project Structure
+```
+aws-sales-forecast/
+├── data_generation.py          # Script to generate simulated sales data
+├── lambda_function.py          # Lambda code for automated predictions
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+├── sql_queries/
+│   └── eda_queries.sql         # SQL queries for EDA and analysis
+├── notebooks/
+│   └── model_training.ipynb    # Jupyter notebook for model training
+├── screenshots/                # Screenshots of AWS services setup
+├── Image_And_Final_Result/     # Final result images and visualizations
+└── Architecture/               # Architecture diagrams and design docs
+```
 
 ## How It Works
 I started with generating realistic sales data for 5 products across 3 stores. Then, I cleaned and engineered features like sales lags and rolling averages. After training models (XGBoost performed best), I set up automated daily forecasts. The system runs fully on AWS serverless services for low cost.
