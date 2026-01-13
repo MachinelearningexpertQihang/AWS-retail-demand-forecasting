@@ -3,6 +3,8 @@
 ## Project Overview
 This project builds a complete machine learning system on AWS to forecast retail sales and optimize inventory. It predicts the next 30 days of sales using time series models, helping stores make smarter decisions on stock levels.
 
+**Note**: This project was developed and executed on Amazon SageMaker, utilizing its managed Jupyter notebooks for model training and experimentation.
+
 Key benefits: 44% better prediction accuracy, 20-40% lower inventory costs, and fewer stockouts.
 
 ## Technical Architecture
